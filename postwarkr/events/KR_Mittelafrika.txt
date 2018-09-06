@@ -5345,6 +5345,7 @@ country_event = {
 			has_country_flag = communard_victory_in_second_weltkrieg
 		}
 		country_exists = GEX
+		tag = GEX
 	}
 	mean_time_to_happen = { days = 10 }
 	
@@ -5353,9 +5354,18 @@ country_event = {
 			factor = 95
 		}
 		name = "Accept the Paris Peace Terms"
+		set_cosmetic_tag = GEX_postwartwo
 		release = KAM
 		release = CNR
+		release = MAG
+		release = NAM
 		release = MAF
+		MAF = {
+			puppet = NAM
+			puppet = MAG
+			transfer_state = 543
+			set_cosmetic_tag = mittelafrika_postwar
+		}
 	}
 	option = {
 		ai_chance = {

@@ -8169,6 +8169,21 @@ country_event = {
 }
 add_namespace = parispeace_internationalvictory
 country_event = {
+	id = parispeace_internationalvictory.0
+	title = "Development of the Kamikaze R&D unveiled in Paris!"
+	
+	trigger = {
+		date > 1939.12.30
+		date < 1941.1.1
+		tag = FRA
+	}
+	
+	option = {
+		set_rule = can_generate_female_aces
+		set_rule = can_use_kamikaze_pilots
+	}
+}
+country_event = {
 	id = parispeace_internationalvictory.1
 	title = "Paris Peace Conferences - Communard Victory"
 	desc = "We have successfully defended our lands and liberated most of Europe, capitalism has been destroyed and more people convert to socialism, shall we offer a peace treaty to our foes to limit our bloodshed?"
@@ -8312,5 +8327,7 @@ country_event = {
 			threat = 15 
 			name = "Continued war"
 		}
+		set_rule = can_puppet
+		set_rule = can_force_government
 	}
 }
