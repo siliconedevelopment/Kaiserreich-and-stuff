@@ -1,0 +1,30 @@
+units = {
+	division = {
+		name = "Freikorps"
+		location = 9509
+		division_template = "Deutscher Befreiungsdienst und Frei Deutschen Armee"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "Freikorps"
+		location = 6390
+		division_template = "Deutscher Befreiungsdienst und Frei Deutschen Armee"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "Freikorps"
+		location = 11288
+		division_template = "Deutscher Befreiungsdienst und Frei Deutschen Armee"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "Freikorps"
+		location = 233
+		division_template = "Deutscher Befreiungsdienst und Frei Deutschen Armee"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.8
+	}
+}

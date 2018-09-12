@@ -8177,10 +8177,12 @@ country_event = {
 		date < 1941.1.1
 		tag = FRA
 	}
-	
+	fire_only_once = yes
 	option = {
-		set_rule = can_generate_female_aces
-		set_rule = can_use_kamikaze_pilots
+		name = "Great!"
+		set_rule = { 
+			can_generate_female_aces = yes
+		}
 	}
 }
 country_event = {
@@ -8225,6 +8227,12 @@ country_event = {
 			end_puppet = BAV
 			end_puppet = RHI
 			end_puppet = NGF
+		}
+		puppet = POL
+		POL = {
+			transfer_state = 85
+			transfer_state = 762
+			annex = GAL
 		}
 		if = {
 			limit = {

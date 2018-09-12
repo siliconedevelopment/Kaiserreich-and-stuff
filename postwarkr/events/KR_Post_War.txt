@@ -1,0 +1,82 @@
+add_namespace = War
+add_namespace = PostWar
+country_event = {
+	id = War.1
+	title = "German Rebellion"
+	desc = "After our victory over Berlin, the Deutscher Befreiungswiderstand (DBW) has been set up as an underground resistance organization, they hsve rebelled in several provinces in Germany proper."
+	is_triggered_only = yes
+	trigger = {
+		date > 1939.1.1
+		date < 1945.1.1
+		all_allied_country = {
+			owns_state = 64
+		} 
+		has_war_with = GEX
+	}
+	mean_time_to_happen = {
+		days = 75
+	}
+	immediate = {
+		random_list = {
+			5 = {
+				GEX = {
+					set_province_controller = 6521
+					set_province_controller = 9560
+					set_province_controller = 6332
+					set_province_controller = 233
+					load_oob = "GER_rebelsmoremore"
+				}
+			}
+			10 = {
+				GEX = {
+					set_province_controller = 9482
+					set_province_controller = 6469
+					add_manpower = 10000
+					load_oob = "GER_rebelsmore"
+				}
+			}
+			1 = {
+				GEX = {
+					set_province_controller = 521
+					set_province_controller = 6521
+					set_province_controller = 6469
+					set_province_controller = 529
+					set_province_controller = 11386
+					set_province_controller = 6332
+					set_province_controller = 266
+					set_province_controller = 3320
+					set_province_controller = 233
+					set_province_controller = 6390
+					add_manpower = 35000
+					load_oob = "GER_rebels"
+				}
+				if = {
+					all_allied_country = {
+						limit = {
+							owns_state = 786
+						}
+						set_province_controller = 11525
+						add_manpower = 500
+						load_oob = "GER_sudeten_rebels"
+					}
+				}
+			}
+			84 = {
+				GEX = {
+					set_province_controller = 233
+					set_province_controller = 9509
+					set_province_controller = 6390
+					set_province_controller = 11288
+					add_manpower = 7500
+					load_oob = "GER_rebelsmoremoremore"
+				}
+			}
+		}
+	}
+	
+	option = {
+		name = "Crush them!"
+		add_war_support = 0.1
+		add_stability = -0.2
+	}
+}

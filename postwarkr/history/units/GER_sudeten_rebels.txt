@@ -1,0 +1,16 @@
+units = {
+	division = {
+		name = "Sudetenpolizei"
+		location = 11525
+		division_template = "Deutscher Befreiungsdienst und Frei Deutschen Armee"
+		start_experience_factor = 0.05
+		start_equipment_factor = 0.8
+	}
+	division = {
+		name = "Sudetenpolizei"
+		location = 11525
+		division_template = "Deutscher Befreiungsdienst und Frei Deutschen Armee"
+		start_experience_factor = 0.9
+		start_equipment_factor = 0.8
+	}
+}
