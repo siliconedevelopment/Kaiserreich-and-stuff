@@ -299,3 +299,39 @@ country_event = { #GER request refused
  		}
  	}
  }
+
+ country_event = {
+	id = hol_in_ex.32
+	title = "Dutch Rebellion in Brabant"
+	desc = "The Bevrijdingsleger van de Lage Landen (BLL) has been formed and rose up in Dutch territory. We should supply them, however, if we don't the Bevrijdingsleger van de Lage Landen will possibly be against us."
+	
+	trigger = {
+		date > 1943.1.1
+		has_manpower > 10000
+		command_power > 15
+	}
+	option = {
+		name = "Voor een gratis Nederland!"
+		trigger = {
+			has_government = paternal_autocrat
+			OR = {
+				has_government = authoritarian_democrat
+			}
+		}
+		load_oob = "Dutch_Rebels"
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			amount = 500
+			producer = GEX
+		}
+		create_corps_commander = {
+			name = "Jean de Lattre de Tassigny"
+			traits = { trickster brilliant_strategist }
+			skill = 10
+			attack_skill = 10
+			defense_skill = 1
+			planning_skill = 7
+			logistics_skill = 13
+		}
+	}
+ }
